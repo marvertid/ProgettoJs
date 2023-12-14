@@ -2,16 +2,16 @@
 **Creare un gioco a scelta tra i seguenti:**
 
 Giochi individuati:
-o Mastermind;
-o Acchiappa la talpa;
-o Memory;
-o Carta alta carta bassa;
-o Roulette;
-o Slot machine;
-o Wordle;
-o Forza quattro;
-o Sasso Carta Forbice;
-o Simon;
-o L’impiccato.
+- Mastermind;
+- Acchiappa la talpa;
+- Memory;
+- Carta alta carta bassa;
+- Roulette;
+- Slot machine;
+- Wordle;
+- Forza quattro;
+- Sasso Carta Forbice;
+- Simon;
+- L’impiccato.
 
 ***Gioco scelto: Wordle***
