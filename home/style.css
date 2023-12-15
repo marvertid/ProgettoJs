@@ -44,7 +44,8 @@ body {
     height: 1.5em;
     padding-top: 0.1em;
     overflow: hidden;
-
+    z-index: -1;
+    
 }
 
 h1 {
@@ -53,24 +54,23 @@ h1 {
     color: white;
 }
 
-@keyframes flipVertical {
-  0% {
-    padding: 0.1em 0em 0em 0em;
-  }
-  50% {
-    padding: -2em -2em -2em -2em;
-  }
-  100% {
-    padding: 0.1em 0em 0em 0em;
-  }
-}
-
 #title {
   display: flex;
 }
 
-.titleText:hover {
-  transform-origin: center;
-  animation: flipVertical 1s ease-in-out forwards;
+.titleText.flip {
+  transition: transform 350ms linear;
+  transform: rotateX(180deg);
+  rotate: x 180deg;
+
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
