@@ -1,0 +1,76 @@
+@font-face {
+    font-family: exoBlack;
+    src: url(../media/exo-font/Exo-Black.otf);
+}
+
+:root {
+    --text: #ddddfe;
+    --background: #1e1e20;
+    --primary: #7f80fd;
+    --secondary: #a00366;
+    --accent: #fb1e4a;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    text-align: center;
+    align-self: center;
+    margin: auto 0;
+}
+
+#changeLanguage {
+    align-self: flex-end;
+}
+
+.titleText {
+    font-family: exoBlack;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    line-height: 1;
+    border: 4px solid #565759;
+    margin: 0.05em;
+    width: 1.5em;
+    height: 1.5em;
+    padding-top: 0.1em;
+    overflow: hidden;
+
+}
+
+h1 {
+    padding: 0px;
+    font-size: 6em;
+    color: white;
+}
+
+@keyframes flipVertical {
+  0% {
+    padding: 0.1em 0em 0em 0em;
+  }
+  50% {
+    padding: -2em -2em -2em -2em;
+  }
+  100% {
+    padding: 0.1em 0em 0em 0em;
+  }
+}
+
+#title {
+  display: flex;
+}
+
+.titleText:hover {
+  transform-origin: center;
+  animation: flipVertical 1s ease-in-out forwards;
+}
+
