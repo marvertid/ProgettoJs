@@ -3,11 +3,15 @@
     src: url(../media/exo-font/Exo-Black.otf);
 }
 
+@font-face {
+    font-family: Poppins;
+    src: url(../media/Poppins/Poppins-Regular.ttf)
+}
 :root {
-    --text: #ddddfe;
+    --text: #f6f8e5;
     --background: #1e1e20;
-    --primary: #7f80fd;
-    --secondary: #a00366;
+    --primary: #884E8D;
+    --secondary: #3B51B5;
     --accent: #fb1e4a;
 }
 
@@ -24,7 +28,7 @@ body {
 #main {
     text-align: center;
     align-self: center;
-    margin: auto 0;
+    margin: 10vh 0;
 }
 
 #changeLanguage {
@@ -73,4 +77,44 @@ h1 {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+.button {
+    text-decoration: none;
+    border-radius: 2px;
+    border-style: solid;
+    padding: 0.4em;
+    font-size: 1.5em;
+    margin: 1em;
+    border-radius: 0.3em;
+    color: var(--text);
+    font-family: 'Poppins', ui-sans-serif;
+    display: inline-block;
+    transition: transform ease 0.2s, box-shadow ease 0.2s;
+}
+
+#play {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    z-index: 2;
+    white-space: nowrap;
+}
+
+#about {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+#play:hover {
+    transform: translateY(-0.3em);
+    box-shadow: 0 20px 80px -10px var(--primary);
+}
+
+#about:hover {
+    transform: translateY(-0.3em);
+    box-shadow: 0 20px 80px -10px var(--secondary);
+}
+
+#changeLanguage:hover {
+    transform: translateY(-0.3em);
 }
