@@ -1,0 +1,34 @@
+@font-face {
+    font-family: exoBlack;
+    src: url(../media/exo-font/Exo-Black.otf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../media/Poppins/Poppins-Regular.ttf)
+}
+:root {
+    --text: #f6f8e5;
+    --background: #1e1e20;
+    --primary: #884E8D;
+    --secondary: #3B51B5;
+    --accent: #fb1e4a;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh auto;
+
+}
+
+header {
+    display: grid;
+    border:white 2px solid;
+    width: 10vh;
+}
