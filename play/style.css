@@ -22,13 +22,22 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 10vh auto;
 
 }
 
-header {
-    display: grid;
-    border:white 2px solid;
-    width: 10vh;
-}
+
+table {
+    gap: 10px; /* Spazio tra le celle */
+    border: 1px solid white; /* Bordo della tabella */
+    width: 20em;
+    height: 24em;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+
+  td {
+    border: 1px solid white; /* Bordo della cella */
+    padding: 10px; /* Spazio interno della cella */
+    text-align: center;
+    color: white;
+  }
