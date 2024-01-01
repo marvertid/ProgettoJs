@@ -33,6 +33,7 @@ body {
 
 #changeLanguage {
     align-self: flex-end;
+    transition: background-color ease-in 0.2s, color ease-in 0.2s, border-color ease-in 0.2s ;
 }
 
 .titleText {
@@ -116,5 +117,7 @@ h1 {
 }
 
 #changeLanguage:hover {
-    transform: translateY(-0.3em);
+    background-color: var(--text);
+    color: black;
+    border-color: var(--text);
 }

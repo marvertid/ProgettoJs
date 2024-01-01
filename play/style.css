@@ -5,7 +5,11 @@
 
 @font-face {
     font-family: Poppins;
-    src: url(../media/Poppins/Poppins-Regular.ttf)
+    src: url(../media/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: CurierPrimeBold;
+    src: url(../media/Courier_Prime/CourierPrime-Bold.ttf);
 }
 :root {
     --text: #f6f8e5;
@@ -22,22 +26,30 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-
+    color: white;
+    font-family: CurierPrimeBold;
 }
 
 
 table {
     gap: 10px; /* Spazio tra le celle */
     border: 1px solid white; /* Bordo della tabella */
-    width: 20em;
-    height: 24em;
+    width: 24em;
+    height: 28em;
     margin: 0 auto;
     margin-top: 2em;
-  }
+}
 
-  td {
+td {
     border: 1px solid white; /* Bordo della cella */
-    padding: 10px; /* Spazio interno della cella */
+    padding: 20px; /* Spazio interno della cella */
     text-align: center;
     color: white;
-  }
+    font-size: 2em;
+    line-height: 0em;
+    text-transform: capitalize;
+}
+
+p { 
+    margin: 0;
+}
