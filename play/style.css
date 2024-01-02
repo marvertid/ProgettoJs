@@ -32,17 +32,19 @@ body {
 
 
 table {
-    gap: 10px; /* Spazio tra le celle */
-    border: 1px solid white; /* Bordo della tabella */
-    width: 24em;
-    height: 28em;
+    border-spacing: 0.3em; /* Spazio tra le celle */
+    width: 21em;
+    height: 26em;
     margin: 0 auto;
     margin-top: 2em;
+    text-align: center;
+    vertical-align: center;
 }
 
 td {
-    border: 1px solid white; /* Bordo della cella */
+    border: 2px solid #565759;
     padding: 20px; /* Spazio interno della cella */
+    padding-top: 25px;
     text-align: center;
     color: white;
     font-size: 2em;
@@ -52,4 +54,33 @@ td {
 
 p { 
     margin: 0;
+}
+
+.popAnim {
+    animation-name: Pop;
+    animation-duration: 150ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Pop {
+    from {
+        border-color: #565759;
+        transform: scale(0.8);
+    }
+  
+    50% {
+        border-color: #a7a8aa;
+        transform: scale(1.1);
+
+    }
+    100% {
+        border-color: #a7a8aa;
+        transform: scale(1);
+    }
+}
+
+.flip {
+    transition: transform 350ms linear;
+    transform: rotateX(180deg);
+    rotate: x 180deg;
 }
